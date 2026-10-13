@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Valor e metros do terreno</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Calculo terreno</h1>
+
+            <p>Digite a metragem</p>
+
+            <label for="txtMedida1">Comprimento:</label>
+
+            <input type="number" id="txtComprimento">
+
+
+            <label for="txtMedida2">Largura:</label>
+
+            <input type="number" id="txtLargura">
+
+
+            <label for="txtValor1">Valor do metro quadrado:</label>
+
+            <input type="number" id="txtValor">
+
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            
+
+            var numero1 = document.getElementById("txtComprimento").value;
+
+            var medida1 = parseInt(numero1);
+
+            var numero2 = document.getElementById("txtLargura").value;
+
+            var medida2 = parseInt(numero2);
+
+            var valor1 = document.getElementById("txtValor").value;
+
+            var valorMetro = parseInt(valor1);
+
+
+            var soma = medida1 * medida2;
+
+            var total = soma * valorMetro;
+
+            var mensagem = "A metragem é de " + soma + " metros e o valor total é R$ " + total;
+
+
+            alert(mensagem);
+
+        }
+
+    </script>
+
+</body>
+</html>

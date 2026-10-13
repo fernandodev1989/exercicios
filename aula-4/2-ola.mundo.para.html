@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Olá Mundo Para</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Olà Mundo Para</h1>
+
+            <p>Digite abaixo quantas vezes você quer dizer olá Mundo:</p>
+
+            <label for="txt1">Quantidadede vezes:</label><input type="number" id="txtQuantitadedeVezes">
+
+
+
+            <button onclick="botao_click()">Dizer Olá Mundo</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+            //PROGRESSIVO//
+            var quantidadeTexto = document.getElementById("txtQuantitadedeVezes").value;
+
+            var quantidade = parseInt(quantidadeTexto);
+
+            for (var i = 0; i < quantidade; i++) {
+
+            } {
+                alert("Olá mundo " + i);
+            }
+
+        }
+
+    </script>
+</body>
+</html>

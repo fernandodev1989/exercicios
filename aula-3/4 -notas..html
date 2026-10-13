@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Nota</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Nota</h1>
+
+            <p></p>
+
+            <label for="txt1">Nota do primeiro semestre:</label><input type="number" id="txtNumero1">
+
+            <label for="txt1">Nota do segundo semestre:</label><input type="number" id="txtNumero2">
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            var numero1Texto = document.getElementById("txtNumero1").value;
+
+            var numero2Texto = document.getElementById("txtNumero2").value;
+
+            var numero1 = parseFloat(numero1Texto);
+
+            var numero2 = parseFloat(numero2Texto);
+
+            var soma = (numero1 + numero2);
+
+            var media = (soma / 2);
+
+
+            if (media < 6) {
+                alert("Reprovado");
+            }
+
+            else if (media >= 6) {
+                alert("Aprovado");
+            }
+             
+            
+         
+        }
+
+    </script>
+
+</body>
+</html>

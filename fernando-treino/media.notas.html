@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Media notas</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Calculo da Média</h1>
+
+            <p>Digite as notas para calculo:</p>
+
+
+            <label for="txtNumero1">Nota 1:</label>
+
+            <input type="number" id="txtNota1">
+
+
+            <label for="txtNumero2">Nota 2:</label>
+
+            <input type="number" id="txtNota2">
+
+
+            <button onclick="botao_click()">Botão</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            var numero1 = document.getElementById("txtNota1").value;
+
+            var nota1 = parseFloat(numero1);
+
+            var numero2 = document.getElementById("txtNota2").value;
+
+            var nota2 = parseFloat(numero2);
+
+            var soma = nota1 + nota2;
+
+            var media = soma / 2;
+
+            var mensagem = " A sua média final é " + media;
+
+            alert(mensagem);
+        }
+
+    </script>
+
+</body>
+</html>

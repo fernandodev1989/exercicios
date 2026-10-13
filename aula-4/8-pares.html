@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Somar pares</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Somar Pares</h1>
+
+            <p></p>
+
+            <label for="txt1">Digite o número:</label><input type="number" id="txtPares">
+
+
+            <button onclick="botao_click()">Exibir pares</button>
+
+        </div>
+    </div>
+
+    <script>
+        function botao_click() { 
+
+            var paresTexto = document.getElementById("txtPares").value;
+
+            var fim = parseInt(paresTexto);
+
+        var mensagem = "os somar dos numeros pares até " + fim + " é: ";
+
+            var soma = 0;
+
+            for (var i = 1; i <= fim; i++) {
+
+                if (i % 2 == 0) {
+                    soma = soma + i;
+                }
+
+            }
+            alert(mensagem + soma);
+             }
+    </script>
+
+</body>
+</html>

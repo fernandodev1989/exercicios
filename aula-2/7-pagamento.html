@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Pagamento</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Pagamento</h1>
+
+            <p></p>
+
+            <label for="txt1">Digite o nome do funcionário:</label>
+
+            <input type="text" id="caixaDeTexto1">
+
+            <label for="txt1">Digite valor que ele recebe por hora:</label>
+
+            <input type="number" id="caixaDeTexto2">
+
+            <label for="txt1">Quantidade de horas trabalhadas por mês:</label>
+
+            <input type="number" id="caixaDeTexto3">
+
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+           
+
+            var caixa1 = document.getElementById("caixaDeTexto1").value;
+            var numero1 = parseFloat(caixa1);
+
+            var caixa2 = document.getElementById("caixaDeTexto2").value;
+            var numero2 = parseFloat(caixa2);
+
+            var caixa3 = document.getElementById("caixaDeTexto3").value;
+            var numero3 = parseFloat(caixa3);
+
+            var soma = numero2 * numero3;
+
+            var mensagem = "O pagamento para " + caixa1 + " deve ser de R$ " + soma;
+
+            alert(mensagem) 
+        }
+
+    </script>
+
+</body>
+</html>

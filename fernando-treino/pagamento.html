@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>pagamento</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Calculo de salario</h1>
+
+            <p>Digite os dados abaixo</p>
+
+            <label for="txtCaixa1">Funcionario:</label><input type="text" id="txtNome">
+
+            <label for="txtCaixa2">Horas trabalhadas:</label><input type="number" id="txtHora">
+
+            <label for="txtCaixa3">Valor da hora:</label><input type="number" id="txtValor">
+
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+            
+            var caixa1 = document.getElementById("txtNome");
+            var nomeFunc = caixa1.value;
+
+            var caixa2 = document.getElementById("txtHora").value;
+            var qtdHora = parseInt(caixa2);
+
+            var caixa3 = document.getElementById("txtValor").value;
+            var valor = parseInt(caixa3);
+
+            var soma = qtdHora * valor;
+
+            var mensagem = " O fucionário(a) " + nomeFunc + " receberar R$ " + soma;
+
+
+            alert(mensagem);
+
+        }
+
+    </script>
+
+</body>
+</html>

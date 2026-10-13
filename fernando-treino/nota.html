@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Notas</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Notas</h1>
+
+            <p>Digite as Notas:</p>
+
+            <label for="txt1">Nota 1:</label><input type="number" id="txtNota1">
+
+            <label for="txt1">Nota 2:</label><input type="number" id="txtNota2">
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            var notaCaixa1 = document.getElementById("txtNota1").value;
+            var caixaNota1 = parseFloat(notaCaixa1);
+
+            var notaCaixa2 = document.getElementById("txtNota2").value;
+            var caixaNota2 = parseFloat(notaCaixa2);
+
+            var soma = caixaNota1 + caixaNota2;
+
+            var media = soma / 2;
+
+            if (media >= 6) {
+                alert(" Sua nota é " + media + " é você foi Aprovado.");
+            }
+            else {
+                alert(" Sua nota é " + media + " é você foi Reprovado");
+            }
+
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Título</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Contador de passos</h1>
+
+            <p></p>
+
+            <label for="txt1">Digite a quantidade de passos:</label>
+            
+            <input type="number" id="txtQtdPassos">
+
+            <button onclick="botao_click()">Contagem</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            var txtPassos = document.getElementById("txtQtdPassos").value;
+            var numeroPassos = parseInt(txtPassos);
+
+            while (numeroPassos > 0) {
+
+                alert(" Faltam " + numeroPassos);
+
+                numeroPassos = numeroPassos - 1;
+
+
+            }
+            if (numeroPassos < 1) {
+                alert(" Fim da contagem ");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

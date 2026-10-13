@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Maior, menor e Mèdia</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Maior, Menor e Média</h1>
+
+            <p></p>
+
+            <label for="txtQuantidadeNumeros">Digite a quantidade de números:</label>
+
+            <input type="number" id="txtQuantidadeNumeros">
+
+            <label for="txtNumero">Digite o número:</label>
+
+            <input type="number" id="txtNumero">
+
+
+
+            <button onclick="botao_click()">Armazenar</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        var numeros = [];
+
+        function botao_click() {
+
+            var qtdeNumeros = parseInt(document.getElementById("txtQuantidadeNumeros").value);
+
+
+            if (numeros.length < qtdeNumeros) {
+
+                var numeroDigitado = parseInt(document.getElementById("txtNumero").value);
+
+                numeros.push(numeroDigitado);
+
+                document.getElementById("txtNumero").value = "";
+                document.getElementById("txtNumero").focus();
+            }
+            
+            //Continuar para fazer mostrar o maior, menor e a media. com if.
+            
+
+        }
+
+    </script>
+
+</body>
+</html>

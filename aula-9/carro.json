@@ -1,0 +1,9 @@
+{
+    "carro": {
+        "marca": "Honda",
+        "modelo": "Fit",
+        "placa": "ABC-1234",
+        "cor": "Preto",
+        "ano": 2007
+    }
+}

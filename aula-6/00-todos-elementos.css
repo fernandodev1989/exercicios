@@ -1,0 +1,16 @@
+h1{
+    color:red;
+}
+#txt1{
+    background-color:#808080;
+}
+ul li{
+    color: red;
+    font-size: 15px;
+}
+form #txt2{
+    background-color:blue;
+}
+form input[type="password"] {
+    background-color: limegreen;
+}

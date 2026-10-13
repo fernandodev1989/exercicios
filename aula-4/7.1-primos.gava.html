@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>PrimosGava</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Exibir primos Gava</h1>
+
+            <p></p>
+
+            <label for="txt1">Digite o número:</label>
+
+            <input type="number" id="txtFinal">
+
+            <button onclick="calcular_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function calcular_click() {
+
+            var finalTexto = document.getElementById("txtFinal").value;
+            //--Final= ao número digitado--//
+            var final = parseInt(finalTexto);
+
+            var mensagem = "os números primos são: \n";
+
+            for (var i = 2; i <= final; i++) {
+                //--Afirmamos que e primo é TRUE = (verdadeiro) até que prove o contrario no for seguinte--//
+                var primo = true;
+
+                var numero = i;
+
+                for (var j = 2; j < numero; j++) {
+
+                    var resto = numero % j;
+
+                    if (resto == 0) {
+                        primo = false;
+                    }
+                }
+
+                if (primo) {
+                    mensagem += numero + "\n";
+
+                }
+            }
+
+            alert(mensagem);
+        }
+
+    </script>
+
+</body>
+</html>

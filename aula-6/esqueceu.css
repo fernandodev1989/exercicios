@@ -1,0 +1,12 @@
+.box input[type=email]{
+    width:100%;
+}
+button{
+    width:100%;
+}
+.box{
+    padding:15px
+}
+img{
+    width:100%;
+}

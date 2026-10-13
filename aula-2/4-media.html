@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Calculo Média</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Calculo Média</h1>
+
+            <p>Informe dois números para calculo da media:</p>
+
+
+            <label for="txtCaixaDeTexto">Número 1:</label><input type="number" id="caixaNota1">
+
+            <label for="txtCaixaDeTexto">Número 2:</label><input type="number" id="caixaNota2">
+
+            <label for="txtCaixaDeTexto">Número 3:</label><input type="number" id="caixaNota3">
+
+            <button onclick="botao_click()">Calcular</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            var nota1 = document.getElementById("caixaNota1").value;
+
+            var numero1 = parseInt(nota1);
+
+
+            var nota2 = document.getElementById("caixaNota2").value;
+
+            var numero2 = parseInt(nota2);
+
+
+            var nota3 = document.getElementById("caixaNota3").value;
+
+            var numero3 = parseInt(nota3);
+
+
+            var soma = numero1 + numero2 + numero3;
+
+            var media = soma /2;
+
+            var mensagem = " A média é " + media;
+
+            alert(mensagem);
+
+        }
+        
+
+    </script>
+
+</body>
+</html>

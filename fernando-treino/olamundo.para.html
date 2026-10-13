@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Olá mundo para</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Olá mundo! com para</h1>
+
+
+            <label for="txt1">Digite a quantidade de vezes que você que dizer Olá:</label>
+
+            <input type="text" id="txtOlaMundo">
+
+            <button onclick="botao_click()">Dizer olá mundo</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+            //Assim se faz um comentãrio.
+            var textoOlaMundo = document.getElementById("txtOlaMundo").value;
+            var txtQuantidade = parseInt(textoOlaMundo);
+
+            for (var i = 1; i <= txtQuantidade; i++) {
+                alert("Olá mundo");
+            }
+
+
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Olá mundo regressivo</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <h1>Olá mundo regressivo</h1>
+
+            <p></p>
+
+            <label for="txt1">Digite a quantidade ola mundo regressiva:</label>
+            
+            <input type="number" id="txtOlaRegressivo">
+
+            <button onclick="botao_click()">Botão</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        function botao_click() {
+
+            txtOlaMundoRegressivo = document.getElementById("txtOlaRegressivo").value;
+            quantidadeOla = parseInt(txtOlaMundoRegressivo);
+
+            for (var i = quantidadeOla; i >= 1; i--) {
+                alert(" Olá mundo " + i + " regressivo.");
+
+            }
+
+            
+
+
+         }
+
+    </script>
+
+</body>
+</html>
